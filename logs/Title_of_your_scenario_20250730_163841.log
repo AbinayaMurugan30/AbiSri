@@ -1,0 +1,3 @@
+2025-07-30 16:38:41 [TestNG-PoolService-1] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
+2025-07-30 16:38:41 [TestNG-PoolService-1] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Teknotrait Solutions\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
+2025-07-30 16:39:00 [TestNG-PoolService-1] INFO  com.teknotrait.webautomation.stepDefinitions.StepDefinitions - Launched the application

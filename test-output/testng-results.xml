@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-30T16:38:40 IST" name="Default suite" finished-at="2025-07-30T16:39:05 IST" duration-ms="24548">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.teknotrait.webautomation.runner.TestRunner@349c1daf]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-07-30T16:38:40 IST" name="Default test" finished-at="2025-07-30T16:39:05 IST" duration-ms="24548">
+      <class name="com.teknotrait.webautomation.runner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.teknotrait.webautomation.runner.TestRunner@349c1daf]" started-at="2025-07-30T16:38:40 IST" name="setUpClass" finished-at="2025-07-30T16:38:40 IST" duration-ms="302" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6d469831]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.teknotrait.webautomation.runner.TestRunner@349c1daf]" started-at="2025-07-30T16:38:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T16:39:01 IST" duration-ms="20167" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Title of your scenario"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Framework test"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.java.PendingException">
+            <message>
+              <![CDATA[TODO: implement me]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
+at com.teknotrait.webautomation.stepDefinitions.StepDefinitions.enter_the_text(StepDefinitions.java:26)
+at ✽.Enter the text(file:///C:/Users/Teknotrait%20Solutions/eclipse-workspace/Abinaya/tekno-automate/src/test/resources/featureFile/Test1.feature:26)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.java.PendingException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.teknotrait.webautomation.runner.TestRunner@349c1daf]" started-at="2025-07-30T16:39:01 IST" name="tearDownClass" finished-at="2025-07-30T16:39:05 IST" duration-ms="4006" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.teknotrait.webautomation.runner.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

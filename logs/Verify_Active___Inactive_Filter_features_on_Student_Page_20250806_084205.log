@@ -1,0 +1,6 @@
+2025-08-06 08:42:06 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 138.0.7204.183 (resolved driver for Chrome 138)
+2025-08-06 08:42:06 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Teknotrait Solutions\.cache\selenium\chromedriver\win64\138.0.7204.183\chromedriver.exe
+2025-08-06 08:42:11 [main] INFO  com.teknotrait.webautomation.stepDefinitions.StepDefinitions - Application Launched successfully with Valid Credentials
+2025-08-06 08:42:13 [main] INFO  com.teknotrait.webautomation.stepDefinitions.StepDefinitions - Selected My school successfully
+2025-08-06 08:42:13 [main] INFO  com.teknotrait.webautomation.stepDefinitions.StepDefinitions - Selected My student successfully
+2025-08-06 08:42:13 [main] INFO  com.teknotrait.webautomation.stepDefinitions.StepDefinitions - Status is clicked

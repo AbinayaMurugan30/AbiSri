@@ -1,0 +1,6 @@
+2025-08-06 16:27:15 [TestNG-PoolService-1] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using geckodriver 0.36.0 (resolved driver for Firefox 141)
+2025-08-06 16:27:15 [TestNG-PoolService-1] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\Teknotrait Solutions\.cache\selenium\geckodriver\win64\0.36.0\geckodriver.exe
+2025-08-06 16:27:24 [TestNG-PoolService-1] INFO  com.teknotrait.webautomation.stepDefinitions.Test1 - Application Launched successfully with Valid Credentials
+2025-08-06 16:27:26 [TestNG-PoolService-1] INFO  com.teknotrait.webautomation.stepDefinitions.Test1 - Selected My school successfully
+2025-08-06 16:27:26 [TestNG-PoolService-1] INFO  com.teknotrait.webautomation.stepDefinitions.Test1 - Selected Students successfully
+2025-08-06 16:27:28 [TestNG-PoolService-1] INFO  com.teknotrait.webautomation.stepDefinitions.Test1 - Add New Student button selected successfully

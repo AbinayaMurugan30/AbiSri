@@ -1,0 +1,6 @@
+2025-08-04 14:58:05 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using geckodriver 0.36.0 (resolved driver for Firefox 141)
+2025-08-04 14:58:05 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\Teknotrait Solutions\.cache\selenium\geckodriver\win64\0.36.0\geckodriver.exe
+2025-08-04 14:58:12 [main] INFO  com.teknotrait.webautomation.stepDefinitions.StepDefinitions - Application Launched successfully with Valid Credentials
+2025-08-04 14:58:13 [main] INFO  com.teknotrait.webautomation.stepDefinitions.StepDefinitions - Selected My school successfully
+2025-08-04 14:58:16 [main] INFO  com.teknotrait.webautomation.stepDefinitions.StepDefinitions - Selected Students successfully
+2025-08-04 14:58:17 [main] INFO  com.teknotrait.webautomation.stepDefinitions.StepDefinitions - Add New Student button selected successfully

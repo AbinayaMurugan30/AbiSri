@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 37.81 s <<< FAILURE! -- in TestSuite
+com.teknotrait.webautomation.runner.TestRunner.runScenario["Verify Active / Inactive Filter features on Student Page", "Framework Enhancement test"](2) -- Time elapsed: 31.39 s <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getClass()" because "exceptionDriver" is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.teknotrait.webautomation.webActions.WebPageActions.waitForElementToBeClickable(WebPageActions.java:580)
+	at com.teknotrait.webautomation.pages.HomePage.inActiveStatus(HomePage.java:70)
+	at com.teknotrait.webautomation.stepDefinitions.Test2.verify_all_the_records_displayed_should_be_inactive(Test2.java:45)
+	at ✽.Verify all the records displayed should be inactive(file:///C:/Users/Teknotrait%20Solutions/eclipse-workspace/Abinaya/tekno-automate/src/test/resources/featureFile/Test2.feature:28)
+

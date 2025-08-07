@@ -1,0 +1,2 @@
+2025-07-31 16:31:18 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 138.0.7204.183 (resolved driver for Chrome 138)
+2025-07-31 16:31:18 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Teknotrait Solutions\.cache\selenium\chromedriver\win64\138.0.7204.183\chromedriver.exe
