@@ -1,0 +1,6 @@
+2025-09-15 13:26:47 [INFO]: Logger initialized for: Verify Active / Inactive Filter features on Student Page
+2025-09-15 13:26:48 [INFO]: Browser launched
+2025-09-15 13:26:51 [INFO]: Navigated to: https://labs.classadia.com
+2025-09-15 13:26:51 [INFO]: ✅ Application Launched successfully with Valid Credentials
+2025-09-15 13:26:51 [INFO]: Scenario Status: FAILED
+2025-09-15 13:26:52 [INFO]: Browser closed

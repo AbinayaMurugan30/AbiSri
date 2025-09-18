@@ -1,0 +1,319 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "verify-add-new-student;verify-add-new-student",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Verify Add New Student",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 6365739699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Login to the application with a valid credentials",
+            "match": {
+              "location": "step-definitions\\Test1.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 135925000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user clicks on My Schools",
+            "match": {
+              "location": "step-definitions\\Test1.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2750507900
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "studentFirstName",
+                      "Nish"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "studentLastName",
+                      "Miun"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "studentDob",
+                      "12-03-2023"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "studentPhno",
+                      "9876543220"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "studentNationality",
+                      "India"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "studentLevel",
+                      "Preschool Class (2 - 3 years)"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "studentGrade",
+                      "Preschool"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "studentClassRoom",
+                      "Preschool 1"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "studentTiming",
+                      "10am to 4pm"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "studentTerms",
+                      "Term 1"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "parentFirstName",
+                      "Nidhu"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "ParentLastName",
+                      "Nidhesh"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "relation",
+                      "Mother"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "parentPhNo",
+                      "9234567890"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "parentEmailId",
+                      "nidhi@gmail.com"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "parentCountry",
+                      "India"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "parentState",
+                      "Tamilnadu"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "parentCity",
+                      "Chennai"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 6,
+            "name": "tries to Add a New Student with the details",
+            "match": {
+              "location": "step-definitions\\Test1.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1958427799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "verify student should be successfully created",
+            "match": {
+              "location": "step-definitions\\Test1.js:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 540499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 122274599
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "verify-add-new-student",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Verify Add New Student",
+    "tags": [],
+    "uri": "features\\AddNewStudent.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "verify-active-inactive;verify-active-/-inactive-filter-features-on-student-page",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Verify Active / Inactive Filter features on Student Page",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3121943400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Login to the application with a valid credentials",
+            "match": {
+              "location": "step-definitions\\Test1.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 121154499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user clicks on My Schools and select the Inactive filter",
+            "match": {
+              "location": "step-definitions\\Test2.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2566851299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Verify all the records displayed should be inactive",
+            "match": {
+              "location": "step-definitions\\Test2.js:31"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30116011199,
+              "error_message": "locator.textContent: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[@role=\\'option\\' and contains(text(), \\'Inactive\\')]')\u001b[22m\n\n    at HomePage.call (C:\\Users\\Teknotrait Solutions\\tekno-automate\\pages\\/HomePage.js:46:36)\n    at Generator._invoke (C:\\Users\\Teknotrait Solutions\\tekno-automate\\pages\\/HomePage.js:2:1)\n    at Generator.next (C:\\Users\\Teknotrait Solutions\\tekno-automate\\pages\\/HomePage.js:2:1)\n    at asyncGeneratorStep (C:\\Users\\Teknotrait Solutions\\tekno-automate\\pages\\/HomePage.js:2:1)\n    at _next (C:\\Users\\Teknotrait Solutions\\tekno-automate\\pages\\/HomePage.js:2:1)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "Change the status to Active from the filter",
+            "match": {
+              "location": "step-definitions\\Test2.js:37"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "Verify all the records displayed should be active",
+            "match": {
+              "location": "step-definitions\\Test2.js:42"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 79483999
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "verify-active-inactive",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Verify Active Inactive",
+    "tags": [
+      {
+        "name": "@smoke",
+        "line": 1
+      }
+    ],
+    "uri": "features\\VerifyActiveInactive.feature"
+  }
+]

@@ -1,0 +1,7 @@
+2025-07-08 11:31:08 [INFO]: Logger initialized for: TC-003 Verify user is able to sort the products by Name and Price
+2025-07-08 11:31:09 [INFO]: Browser launched
+2025-07-08 11:31:13 [INFO]: Application launched successfully
+2025-07-08 11:31:13 [INFO]: New Yoga link is clicked
+2025-07-08 11:31:17 [INFO]: Sorted products by Product Name
+2025-07-08 11:31:17 [INFO]: Scenario Status: FAILED
+2025-07-08 11:31:17 [INFO]: Browser closed

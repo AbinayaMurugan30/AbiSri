@@ -1,0 +1,5 @@
+2025-09-12 20:29:59 [INFO]: Logger initialized for: Verify Add New Student
+2025-09-12 20:30:00 [INFO]: Browser launched
+2025-09-12 20:30:03 [INFO]: Navigated to: https://labs.classadia.com
+2025-09-12 20:30:13 [INFO]: Scenario Status: FAILED
+2025-09-12 20:30:14 [INFO]: Browser closed

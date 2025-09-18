@@ -1,0 +1,16 @@
+2025-07-08 11:30:05 [INFO]: Logger initialized for: TC-001 Verify NEW user is able to checkout or not
+2025-07-08 11:30:05 [INFO]: Browser launched
+2025-07-08 11:30:10 [INFO]: Application launched successfully
+2025-07-08 11:30:10 [INFO]: New Yoga link is clicked
+2025-07-08 11:30:14 [INFO]: Fiona Fitness Short is selected
+2025-07-08 11:30:15 [INFO]: Size 29 is selected
+2025-07-08 11:30:15 [INFO]: Color Green is selected
+2025-07-08 11:30:18 [INFO]: Product is added to cart
+2025-07-08 11:30:20 [INFO]: Clicked on cart icon
+2025-07-08 11:30:21 [INFO]: Proceeded to checkout
+2025-07-08 11:30:24 [INFO]: User details entered
+2025-07-08 11:30:27 [INFO]: Shipping method selected
+2025-07-08 11:30:31 [INFO]: Order placed successfully
+2025-07-08 11:30:31 [INFO]: Validated confirmation message
+2025-07-08 11:30:31 [INFO]: Scenario Status: PASSED
+2025-07-08 11:30:31 [INFO]: Browser closed

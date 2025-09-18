@@ -1,0 +1,35 @@
+{
+  "name": "teknoautomate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node runAll.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "@babel/register": "^7.27.1",
+    "@cucumber/cucumber": "^11.3.0",
+    "@playwright/test": "^1.53.2",
+    "@types/node": "^24.0.10",
+    "adm-zip": "^0.5.16",
+    "log4js": "^6.9.1",
+    "multiple-cucumber-html-reporter": "^3.9.3",
+    "nodemailer": "^7.0.5",
+    "playwright": "^1.53.2"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "@influxdata/influxdb-client": "^1.35.0",
+    "cucumber-html-reporter": "^7.2.0",
+    "playwright-core": "^1.53.2",
+    "undici-types": "^7.8.0",
+    "winston": "^3.17.0"
+  },
+  "description": ""
+}

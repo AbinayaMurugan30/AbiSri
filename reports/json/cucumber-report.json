@@ -1,0 +1,391 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "checkout-functionality;tc-001-verify-new-user-is-able-to-checkout-or-not",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "TC-001 Verify NEW user is able to checkout or not",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 293245800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user launches the Magento application",
+            "match": {
+              "location": "step-definitions\\Luma.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25017067399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user navigates to Yoga section",
+            "match": {
+              "location": "step-definitions\\Luma.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 161223199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "selects Fiona Fitness Short",
+            "match": {
+              "location": "step-definitions\\Luma.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3575775699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "selects size \"29\" and color \"Green\"",
+            "match": {
+              "location": "step-definitions\\Luma.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1233430099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "adds the product to cart",
+            "match": {
+              "location": "step-definitions\\Luma.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2155699500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "proceeds to checkout",
+            "match": {
+              "location": "step-definitions\\Luma.js:57"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3663554400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "fills in the user details",
+            "match": {
+              "location": "step-definitions\\Luma.js:64"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2564920399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "selects fixed shipping and proceeds",
+            "match": {
+              "location": "step-definitions\\Luma.js:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3229718000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "order should be placed successfully",
+            "match": {
+              "location": "step-definitions\\Luma.js:74"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3356382800
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 317072000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "checkout-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Checkout functionality",
+    "tags": [],
+    "uri": "features\\NewuserCheckout.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "product-search-functionality;tc-002-verify-user-is-able-to-search-a-product-by-entering-keywords",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "TC-002 Verify user is able to search a product by entering keywords",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 251994499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user launches the Magento application",
+            "match": {
+              "location": "step-definitions\\Luma.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3566005499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user searches for product keyword \"men t-shirt\"",
+            "match": {
+              "location": "step-definitions\\Luma.js:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1076895800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "user selects a suggestion from the dropdown",
+            "match": {
+              "location": "step-definitions\\Luma.js:86"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 788976899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "user clicks on the Search button",
+            "match": {
+              "location": "step-definitions\\Luma.js:98"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1043999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "user should see relevant search results",
+            "match": {
+              "location": "step-definitions\\Luma.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 400260600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "all products should have SKU starting with \"M\" and not \"W\"",
+            "match": {
+              "location": "step-definitions\\Luma.js:103"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 15085513800,
+              "error_message": "page.waitForNavigation: Timeout 15000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================\n    at SearchPage.call (C:\\Users\\Teknotrait Solutions\\LumaWebTesting_PlaywrightJS\\pages\\/searchPage.js:53:17)\n    at Generator._invoke (C:\\Users\\Teknotrait Solutions\\LumaWebTesting_PlaywrightJS\\pages\\/searchPage.js:2:1)\n    at Generator.next (C:\\Users\\Teknotrait Solutions\\LumaWebTesting_PlaywrightJS\\pages\\/searchPage.js:2:1)\n    at asyncGeneratorStep (C:\\Users\\Teknotrait Solutions\\LumaWebTesting_PlaywrightJS\\pages\\/searchPage.js:2:1)\n    at _next (C:\\Users\\Teknotrait Solutions\\LumaWebTesting_PlaywrightJS\\pages\\/searchPage.js:2:1)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 385552199
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "product-search-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Product Search Functionality",
+    "tags": [],
+    "uri": "features\\Searching.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "product-sorting-verification;tc-003-verify-user-is-able-to-sort-the-products-by-name-and-price",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "TC-003 Verify user is able to sort the products by Name and Price",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 254126000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user launches the Magento application",
+            "match": {
+              "location": "step-definitions\\Luma.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4266620800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user navigates to Yoga section",
+            "match": {
+              "location": "step-definitions\\Luma.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 152533400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "user sorts the products by \"Product Name\"",
+            "match": {
+              "location": "step-definitions\\Luma.js:123"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1630299,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'selectOption')\n    at YogaPage.call (C:\\Users\\Teknotrait Solutions\\LumaWebTesting_PlaywrightJS\\pages\\/yogapage.js:22:21)\n    at Generator._invoke (C:\\Users\\Teknotrait Solutions\\LumaWebTesting_PlaywrightJS\\pages\\/yogapage.js:2:1)\n    at Generator.next (C:\\Users\\Teknotrait Solutions\\LumaWebTesting_PlaywrightJS\\pages\\/yogapage.js:2:1)\n    at asyncGeneratorStep (C:\\Users\\Teknotrait Solutions\\LumaWebTesting_PlaywrightJS\\pages\\/yogapage.js:2:1)\n    at _next (C:\\Users\\Teknotrait Solutions\\LumaWebTesting_PlaywrightJS\\pages\\/yogapage.js:2:1)\n    at C:\\Users\\Teknotrait Solutions\\LumaWebTesting_PlaywrightJS\\pages\\/yogapage.js:2:1\n    at YogaPage.apply (C:\\Users\\Teknotrait Solutions\\LumaWebTesting_PlaywrightJS\\pages\\/yogapage.js:2:1)\n    at YogaPage.sortBy (C:\\Users\\Teknotrait Solutions\\LumaWebTesting_PlaywrightJS\\pages\\/yogapage.js:21:15)\n    at call (C:\\Users\\Teknotrait Solutions\\LumaWebTesting_PlaywrightJS\\step-definitions\\/Luma.js:124:18)\n    at Generator._invoke (C:\\Users\\Teknotrait Solutions\\LumaWebTesting_PlaywrightJS\\step-definitions\\/Luma.js:2:1)\n    at Generator.next (C:\\Users\\Teknotrait Solutions\\LumaWebTesting_PlaywrightJS\\step-definitions\\/Luma.js:2:1)\n    at asyncGeneratorStep (C:\\Users\\Teknotrait Solutions\\LumaWebTesting_PlaywrightJS\\step-definitions\\/Luma.js:2:1)\n    at _next (C:\\Users\\Teknotrait Solutions\\LumaWebTesting_PlaywrightJS\\step-definitions\\/Luma.js:2:1)\n    at C:\\Users\\Teknotrait Solutions\\LumaWebTesting_PlaywrightJS\\step-definitions\\/Luma.js:2:1\n    at CustomWorld.apply (C:\\Users\\Teknotrait Solutions\\LumaWebTesting_PlaywrightJS\\step-definitions\\/Luma.js:2:1)\n    at CustomWorld.<anonymous> (C:\\Users\\Teknotrait Solutions\\LumaWebTesting_PlaywrightJS\\step-definitions\\/Luma.js:126:2)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "verify products are sorted alphabetically",
+            "match": {
+              "location": "step-definitions\\Luma.js:128"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "user sorts the products by \"Price\"",
+            "match": {
+              "location": "step-definitions\\Luma.js:123"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "verify products are sorted by price",
+            "match": {
+              "location": "step-definitions\\Luma.js:135"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 336473700
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "product-sorting-verification",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Product Sorting Verification",
+    "tags": [],
+    "uri": "features\\Sorting.feature"
+  }
+]

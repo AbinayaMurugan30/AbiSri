@@ -1,0 +1,9 @@
+2025-09-16 08:12:05 [INFO]: Logger initialized for: Verify Add New Student
+2025-09-16 08:12:05 [INFO]: Browser launched
+2025-09-16 08:12:09 [INFO]: Navigated to: https://labs.classadia.com
+2025-09-16 08:12:09 [INFO]: ✅ Application Launched successfully with Valid Credentials
+2025-09-16 08:12:12 [INFO]: ✅ Selected My school successfully
+2025-09-16 08:12:12 [INFO]: ✅ Selected Students successfully
+2025-09-16 08:12:13 [INFO]: ✅ Add New Student button selected successfully
+2025-09-16 08:12:15 [INFO]: ✅ Student Details are added successfully
+2025-09-16 08:12:15 [INFO]: Scenario Status: PASSED

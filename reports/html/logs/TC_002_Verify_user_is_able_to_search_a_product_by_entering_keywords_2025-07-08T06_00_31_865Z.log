@@ -1,0 +1,8 @@
+2025-07-08 11:30:31 [INFO]: Logger initialized for: TC-002 Verify user is able to search a product by entering keywords
+2025-07-08 11:30:32 [INFO]: Browser launched
+2025-07-08 11:30:36 [INFO]: Application launched successfully
+2025-07-08 11:30:37 [INFO]: Entered keyword: men t-shirt
+2025-07-08 11:30:38 [INFO]: Selected suggestion:  men t-shirt181
+2025-07-08 11:30:38 [INFO]: Clicked on search button
+2025-07-08 11:31:08 [INFO]: Scenario Status: FAILED
+2025-07-08 11:31:08 [INFO]: Browser closed
