@@ -8,62 +8,54 @@ class TestResultLogger {
     this.org = process.env.INFLUX_ORG || 'Teknotrait';
     this.bucket = process.env.INFLUX_BUCKET || 'teknojavascript-1';
 
-    this.client = new InfluxDB({ url: this.url, token: this.token });
+     this.client = new InfluxDB({ url: this.url, token: this.token });
     this.writeApi = this.client.getWriteApi(this.org, this.bucket, 'ms');
 
-    // Store all test results
     this.testResults = [];
     this.runStartTime = 0;
   }
 
   logBuildInfo() {
-  // Access environment variables using process.env
   let buildNumber = process.env.BUILD_NUMBER;
   let buildId = process.env.BUILD_ID;
+  let browser = process.env.browser || "unknown";
 
-  // Provide fallback values if environment variables are not set (e.g., in a local run)
   if (!buildNumber) {
     buildNumber = 'local-run';
   }
 
   if (!buildId) {
-    // Generate a timestamp similar to the Java SimpleDateFormat
-    // .slice(0, 19) removes the milliseconds and 'Z' timezone from the ISO string
     buildId = new Date().toISOString().slice(0, 19);
   }
 
-  // Corrected: Using the imported 'Point' and 'WritePrecision' directly
   const buildPoint = new Point('build_info')
-    .tag('job', 'WebAutomation') 
-    .stringField('build_number', buildNumber) 
-    .stringField('build_date', buildId) 
-    .timestamp(new Date(), WritePrecision.MS);
+    .tag('job', 'WebAutomation')
+    .stringField('build_number', buildNumber)
+    .stringField('build_date', buildId)
+    .stringField('browser', browser)  // ✅ added browser info
+    .timestamp(new Date());
 
   this.write(buildPoint);
 
-  console.log(`🏗️ Build Info logged: Build #${buildNumber} at ${buildId}`);
+  console.log(`🏗️ Build Info logged: Build #${buildNumber} | Date: ${buildId} | Browser: ${browser}`);
 }
 
   initializeRun() {
     this.testResults = [];
     this.runStartTime = Date.now();
     console.log(`🚀 Test run initialized at: ${new Date(this.runStartTime).toISOString()}`);
-   // this.logBuildInfo();
+    this.logBuildInfo();
   }
 
   normalizeStatus(status) {
-    switch (status.toLowerCase()) { // Use toLowerCase for case-insensitive comparison
+    switch (status.toLowerCase()) {
       case 'passed':
-      case 'pass':
-        return 'pass';
+      case 'pass': return 'pass';
       case 'failed':
-      case 'fail':
-        return 'fail';
+      case 'fail': return 'fail';
       case 'skipped':
-      case 'skip':
-        return 'skipped';
-      default:
-        return 'unknown';
+      case 'skip': return 'skipped';
+      default: return 'unknown';
     }
   }
 
@@ -72,10 +64,8 @@ class TestResultLogger {
     const startTime = endTime - duration;
     const normStatus = this.normalizeStatus(status);
 
-    // Store the result
-    this.testResults.push({ status: normStatus, name: testName, duration: duration });
+    this.testResults.push({ status: normStatus, name: testName, duration });
 
-    // Corrected: Using the imported 'Point' and 'WritePrecision' directly
     const testPoint = new Point('test_results')
       .tag('status', normStatus)
       .tag('test_name', testName || 'Unnamed Test')
@@ -86,7 +76,7 @@ class TestResultLogger {
       .timestamp(endTime);
 
     this.write(testPoint);
-    console.log(`📊 Test logged: ${testName} - ${normStatus.toUpperCase()} (Duration: ${duration}ms)`);
+    console.log(`📊 Test logged: ${testName} - ${normStatus.toUpperCase()} (${duration}ms)`);
   }
 
   logRunSummary() {
@@ -98,13 +88,11 @@ class TestResultLogger {
     const endTime = Date.now();
     const totalDuration = endTime - this.runStartTime;
 
-    // Calculate counts from the stored results
     const totalPass = this.testResults.filter(r => r.status === 'pass').length;
     const totalFail = this.testResults.filter(r => r.status === 'fail').length;
     const totalSkipped = this.testResults.filter(r => r.status === 'skipped').length;
     const totalExecuted = totalPass + totalFail + totalSkipped;
 
-    // Corrected: Using the imported 'Point' and 'WritePrecision' directly
     const summaryPoint = new Point('test_summary')
       .tag('type', 'run_summary')
       .intField('Total_executed', totalExecuted)

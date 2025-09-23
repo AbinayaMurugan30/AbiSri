@@ -2,10 +2,15 @@
 const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
+const influxLogger = require('./Utility/testResultLogger'); // ✅ adjust path if needed
 
 (async () => {
+  // Mark run start (for your logs/latestRun.txt)
   const markerFile = path.resolve('./logs/latestRun.txt');
   fs.writeFileSync(markerFile, new Date().toISOString());
+
+  // Start run in Influx
+  influxLogger.initializeRun();
 
   try {
     console.log('🔹 Running tests...');
@@ -14,10 +19,14 @@ const { execSync } = require('child_process');
       { stdio: 'inherit' }
     );
   } catch (err) {
-    console.warn('⚠️ Tests failed — continuing to generate report');
-  }
+    console.error('❌ Test execution failed', err);
+  } finally {
+    // End run in Influx
+    influxLogger.logRunSummary();
+    await influxLogger.close();
 
-  // ✅ Reports are generated regardless of pass/fail
-  console.log('🟢 generateReport.js started...');
-  require(path.resolve(__dirname, './generateReport.js'));
+    // Generate report ONCE
+    console.log('🟢 generateReport.js started...');
+    require(path.resolve(__dirname, './generateReport.js'));
+  }
 })();
