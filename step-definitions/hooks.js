@@ -69,5 +69,4 @@ After(async function (scenario) {
 AfterAll(async function () {
   influxLogger.logRunSummary();
   await influxLogger.close();
-  
 });

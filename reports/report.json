@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 22742568399
+              "duration": 8918569100
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 285419399
+              "duration": 148951399
             }
           },
           {
@@ -39,9 +39,8 @@
               "location": "step-definitions\\Test1.js:27"
             },
             "result": {
-              "status": "failed",
-              "duration": 30025524299,
-              "error_message": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//body/div[@id=\\'root\\']/div[@id=\\'wrapper\\']/div/div/div[@id=\\'left-sidebar\\']/div[@class=\\'sidebar-scroll\\']/div[@id=\\'menu\\']/div[@id=\\'left-sidebar-nav\\']/ul[@id=\\'main-menu\\']/li[3]/a[1]')\u001b[22m\n\n    at HomePage.call (C:\\Users\\Teknotrait Solutions\\tekno-automate\\pages\\/HomePage.js:32:29)\n    at Generator._invoke (C:\\Users\\Teknotrait Solutions\\tekno-automate\\pages\\/HomePage.js:2:1)\n    at Generator.next (C:\\Users\\Teknotrait Solutions\\tekno-automate\\pages\\/HomePage.js:2:1)\n    at asyncGeneratorStep (C:\\Users\\Teknotrait Solutions\\tekno-automate\\pages\\/HomePage.js:2:1)\n    at _next (C:\\Users\\Teknotrait Solutions\\tekno-automate\\pages\\/HomePage.js:2:1)\n    at C:\\Users\\Teknotrait Solutions\\tekno-automate\\pages\\/HomePage.js:2:1\n    at HomePage.apply (C:\\Users\\Teknotrait Solutions\\tekno-automate\\pages\\/HomePage.js:2:1)\n    at HomePage.selectMySchool (C:\\Users\\Teknotrait Solutions\\tekno-automate\\pages\\/HomePage.js:31:25)\n    at CustomWorld.call (C:\\Users\\Teknotrait Solutions\\tekno-automate\\step-definitions\\/Test1.js:28:12)\n    at Generator._invoke (C:\\Users\\Teknotrait Solutions\\tekno-automate\\step-definitions\\/Test1.js:2:1)\n    at Generator.next (C:\\Users\\Teknotrait Solutions\\tekno-automate\\step-definitions\\/Test1.js:2:1)\n    at asyncGeneratorStep (C:\\Users\\Teknotrait Solutions\\tekno-automate\\step-definitions\\/Test1.js:2:1)\n    at _next (C:\\Users\\Teknotrait Solutions\\tekno-automate\\step-definitions\\/Test1.js:2:1)\n    at C:\\Users\\Teknotrait Solutions\\tekno-automate\\step-definitions\\/Test1.js:2:1\n    at CustomWorld.<anonymous> (C:\\Users\\Teknotrait Solutions\\tekno-automate\\step-definitions\\/Test1.js:2:1)"
+              "status": "passed",
+              "duration": 1143600
             }
           },
           {
@@ -166,8 +165,8 @@
               "location": "step-definitions\\Test1.js:37"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1030800
             }
           },
           {
@@ -179,8 +178,8 @@
               "location": "step-definitions\\Test1.js:69"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 580600
             }
           },
           {
@@ -188,7 +187,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 153940599
+              "duration": 93555500
             }
           }
         ],
@@ -218,7 +217,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 12321079800
+              "duration": 8586140700
             }
           },
           {
@@ -231,7 +230,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 165381800
+              "duration": 108849099
             }
           },
           {
@@ -244,7 +243,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 30003486399,
+              "duration": 30019400099,
               "error_message": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//body/div[@id=\\'root\\']/div[@id=\\'wrapper\\']/div/div/div[@id=\\'left-sidebar\\']/div[@class=\\'sidebar-scroll\\']/div[@id=\\'menu\\']/div[@id=\\'left-sidebar-nav\\']/ul[@id=\\'main-menu\\']/li[3]/a[1]')\u001b[22m\n\n    at HomePage.call (C:\\Users\\Teknotrait Solutions\\tekno-automate\\pages\\/HomePage.js:32:29)\n    at Generator._invoke (C:\\Users\\Teknotrait Solutions\\tekno-automate\\pages\\/HomePage.js:2:1)\n    at Generator.next (C:\\Users\\Teknotrait Solutions\\tekno-automate\\pages\\/HomePage.js:2:1)\n    at asyncGeneratorStep (C:\\Users\\Teknotrait Solutions\\tekno-automate\\pages\\/HomePage.js:2:1)\n    at _next (C:\\Users\\Teknotrait Solutions\\tekno-automate\\pages\\/HomePage.js:2:1)\n    at C:\\Users\\Teknotrait Solutions\\tekno-automate\\pages\\/HomePage.js:2:1\n    at HomePage.apply (C:\\Users\\Teknotrait Solutions\\tekno-automate\\pages\\/HomePage.js:2:1)\n    at HomePage.selectMySchool (C:\\Users\\Teknotrait Solutions\\tekno-automate\\pages\\/HomePage.js:31:25)\n    at CustomWorld.call (C:\\Users\\Teknotrait Solutions\\tekno-automate\\step-definitions\\/Test2.js:21:12)\n    at Generator._invoke (C:\\Users\\Teknotrait Solutions\\tekno-automate\\step-definitions\\/Test2.js:2:1)\n    at Generator.next (C:\\Users\\Teknotrait Solutions\\tekno-automate\\step-definitions\\/Test2.js:2:1)\n    at asyncGeneratorStep (C:\\Users\\Teknotrait Solutions\\tekno-automate\\step-definitions\\/Test2.js:2:1)\n    at _next (C:\\Users\\Teknotrait Solutions\\tekno-automate\\step-definitions\\/Test2.js:2:1)\n    at C:\\Users\\Teknotrait Solutions\\tekno-automate\\step-definitions\\/Test2.js:2:1\n    at CustomWorld.<anonymous> (C:\\Users\\Teknotrait Solutions\\tekno-automate\\step-definitions\\/Test2.js:2:1)"
             }
           },
@@ -292,7 +291,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 137152300
+              "duration": 189544799
             }
           }
         ],

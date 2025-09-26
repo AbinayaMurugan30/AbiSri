@@ -1,5 +1,5 @@
 // Utility/testResultLogger.js
-const { InfluxDB, Point,WritePrecision } = require('@influxdata/influxdb-client');
+const { InfluxDB, Point, WritePrecision } = require('@influxdata/influxdb-client');
 
 class TestResultLogger {
   constructor() {
@@ -8,43 +8,49 @@ class TestResultLogger {
     this.org = process.env.INFLUX_ORG || 'Teknotrait';
     this.bucket = process.env.INFLUX_BUCKET || 'teknojavascript-1';
 
-     this.client = new InfluxDB({ url: this.url, token: this.token });
+    this.client = new InfluxDB({ url: this.url, token: this.token });
     this.writeApi = this.client.getWriteApi(this.org, this.bucket, 'ms');
 
     this.testResults = [];
     this.runStartTime = 0;
   }
 
-  logBuildInfo() {
-  let buildNumber = process.env.BUILD_NUMBER;
-  let buildId = process.env.BUILD_ID;
-  let browser = process.env.browser || "unknown";
+   logBuildInfo() {
+    // Jenkins vars
+    let buildNumber = process.env.BUILD_NUMBER;
+    let buildId = process.env.BUILD_ID;
 
-  if (!buildNumber) {
-    buildNumber = 'local-run';
+    // Browser + headless detection (use env vars or defaults)
+    let browserName = process.env.BROWSER || 'chrome';
+    let headless = process.env.HEADLESS === 'false' ? false : true; 
+    // Default: headless = true
+
+    // Fallbacks for local run
+    if (!buildNumber) buildNumber = 'local-run';
+    if (!buildId) buildId = new Date().toISOString().slice(0, 19);
+    let environment='https://labs.classadia.com';
+
+    const buildPoint = new Point('build_info')
+      .tag('job', 'WebAutomation')
+      .stringField('build_number', buildNumber)
+      .stringField('build_date', buildId)
+      .stringField('browser', browserName)
+      .stringField('environemnt', environment)
+      .booleanField('headless', headless) // ✅ store true/false
+     // .timestamp(new Date(), WritePrecision.ms);
+
+    this.write(buildPoint);
+
+    console.log(`🏗️ Build Info logged → Build: ${buildNumber} | Date: ${buildId} | Browser: ${browserName}`);
   }
-
-  if (!buildId) {
-    buildId = new Date().toISOString().slice(0, 19);
-  }
-
-  const buildPoint = new Point('build_info')
-    .tag('job', 'WebAutomation')
-    .stringField('build_number', buildNumber)
-    .stringField('build_date', buildId)
-    .stringField('browser', browser)  // ✅ added browser info
-    .timestamp(new Date());
-
-  this.write(buildPoint);
-
-  console.log(`🏗️ Build Info logged: Build #${buildNumber} | Date: ${buildId} | Browser: ${browser}`);
-}
 
   initializeRun() {
     this.testResults = [];
     this.runStartTime = Date.now();
     console.log(`🚀 Test run initialized at: ${new Date(this.runStartTime).toISOString()}`);
-    this.logBuildInfo();
+
+    // Always log build info at the start of a run
+   this.logBuildInfo();
   }
 
   normalizeStatus(status) {
@@ -107,7 +113,7 @@ class TestResultLogger {
       .timestamp(endTime);
 
     this.write(summaryPoint);
-    console.log(`📈 Run Summary - Total: ${totalExecuted} | Pass: ${totalPass} | Fail: ${totalFail} | Skip: ${totalSkipped} | Duration: ${(totalDuration / 1000.0)}s`);
+    console.log(`📈 Run Summary → Total: ${totalExecuted} | Pass: ${totalPass} | Fail: ${totalFail} | Skip: ${totalSkipped} | Duration: ${(totalDuration / 1000.0)}s`);
   }
 
   write(point) {
